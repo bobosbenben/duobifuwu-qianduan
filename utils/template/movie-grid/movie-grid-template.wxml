@@ -1,0 +1,13 @@
+<import src="../movie/movie-template.wxml" />
+<template name="movieGridTemplate">
+  <scroll-view class="grid-container" scroll-y="true" bindscrolltolower="onScrollLower" lower-threshold="1" style='height:{{windowHeight}}px;width:99%;'>
+    <block wx:for="{{units}}" wx:for-item="unit">
+      <view class="single-view-container">
+        <template is="movieTemplate" data="{{...unit}}" />
+      </view>
+    </block>
+    <view class="loading-complete" hidden="{{!searchLoadingComplete}}">
+      <text class="loading-complete-text">全部都加载啦!</text>
+    </view>
+  </scroll-view>
+</template>

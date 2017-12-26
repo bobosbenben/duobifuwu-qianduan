@@ -1,0 +1,19 @@
+<import src="../cell/cell.wxml" />
+<template name="group">
+  <view class="pages-container">
+  <!-- <scroll-view scroll-y="true" class="pages-wrapper"> -->
+  <view class="pages-wrapper">
+    <view class="group-title">
+      <image src="../../image/a1.png" class="group-title-icon"></image>
+      <text class="group-title-text">{{text}}</text>
+    </view>
+
+    <view wx:for="{{mainPageGroupItemList}}" wx:key="{{text}}">
+      <view class="pages-row">
+        <template is="cell" data="{{...item[0],cellHeight}}" />
+        <template is="cell" data="{{...item[1],cellHeight}}" />
+      </view>
+    </view>
+  </view>
+</view>
+</template>

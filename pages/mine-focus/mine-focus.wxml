@@ -1,0 +1,11 @@
+<!--pages/mine-focus/mine-focus.wxml-->
+<import src="../../utils/template/unit/unit-template.wxml" />
+
+<view wx:for="{{focusUnits}}" wx:for-item="focusUnit">
+  <template is="unit" data="{{...focusUnit}}"></template>
+</view>
+
+<view class='loading-complete' hidden='{{!listLoadingComplete}}'>
+  <text class='loading-complete-text'>全部都加载啦!</text>
+</view>
+

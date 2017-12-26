@@ -1,0 +1,5 @@
+/* pages/more-units/more-units.wxss */
+@import "../../utils/template/movie-grid/movie-grid-template.wxss";
+.hot-more{
+  padding-left: 10rpx;
+}

@@ -1,0 +1,96 @@
+/* mine.wxss */
+
+page{
+  background-color: #f0f0f0;
+}
+
+.container {
+  padding-top: 0rpx;
+  padding-bottom: 0rpx;
+  /* background-color: red; */
+}
+
+.header {
+  /* border-bottom: solid 2rpx #000000; */
+  background-color: white;
+  width: 100%;
+  margin-top: -10rpx;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.hr {
+  margin-top: 0rpx;
+  height: 1px;
+  width: 100%;
+  background-color: #d9d9d9;
+}
+
+.hr2 {
+  margin-top: 20rpx;
+  height: 1px;
+  width: 100%;
+  background-color: #d9d9d9;
+}
+
+.user-name {
+  margin-top: 40rpx;
+  margin-bottom: 40rpx;
+}
+
+.userinfo-avatar {
+  width: 128rpx;
+  height: 128rpx;
+  margin-top: 80rpx;
+  border-radius: 50%;
+}
+
+.list {
+  background-color: white;
+  width: 100%;
+  float: left;
+  /* border-bottom: 1px solid #ebebeb; */
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  vertical-align: middle;
+  justify-content: space-between;
+}
+
+.list-text {
+  font-size: 30rpx;
+  color: #282828;
+  line-height: 88rpx;
+  margin-left: 30rpx;
+}
+
+.list-arrow {
+  width: 36rpx;
+  height:56rpx;
+  margin-right: 30rpx;
+  /* margin: 30rpx 20rpx 30rpx 20rpx; */
+}
+
+.dobby{
+  text-align: center;
+   margin-top: 110rpx; 
+}
+
+.dobby-image{
+  width:100rpx;
+  height: 130rpx;
+}
+
+.bottom{
+  margin-top: 0rpx;
+  text-align: center;
+}
+
+.bottom-text{
+  font-size: 25rpx;
+  color: #282828;
+  line-height: 88rpx;
+  /* margin-left: 30rpx; */
+  text-align: center;
+}

@@ -1,0 +1,50 @@
+{
+  "pages": [
+    "pages/gezi/gezi",
+    "pages/hot/hot",
+    "pages/mine/mine",
+    "pages/list/list",
+    "pages/detail/detail",
+    "pages/more-units/more-units",
+    "pages/mine-focus/mine-focus",
+    "pages/mine-zan/mine-zan",
+    "pages/mine-contact-us/mine-contact-us"
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#F0F0F0",
+    "navigationBarTitleText": "多比信息服务",
+    "navigationBarTextStyle": "black"
+  },
+  "tabBar": {
+    "color": "#888",
+    "selectedColor": "#48c23d",
+    "backgroundColor": "#fff",
+    "borderStyle": "white",
+    "list": [
+      {
+        "pagePath": "pages/gezi/gezi",
+        "text": "全部",
+        "iconPath": "image/ws.png",
+        "selectedIconPath": "image/s.png"
+      },
+      {
+        "pagePath": "pages/hot/hot",
+        "text": "热门",
+        "iconPath": "image/wf.png",
+        "selectedIconPath": "image/f.png"
+      },
+      {
+        "pagePath": "pages/mine/mine",
+        "text": "我的",
+        "iconPath": "image/ww.png",
+        "selectedIconPath": "image/w.png"
+      }
+    ]
+  },
+  "networkTimeout": {
+    "request": 10000,
+    "downloadFile": 10000
+  },
+  "debug": true
+}

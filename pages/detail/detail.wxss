@@ -1,0 +1,348 @@
+/* detail.wxss */
+.container{
+  background-color: #F0F0F0;
+  padding-top: 0rpx;
+  margin: 0rpx 0rpx 0rpx 0rpx;
+  padding-bottom: 150rpx; 
+}
+
+.head{
+  background-color: white;
+}
+
+.title{
+  padding: 30rpx 0rpx 20rpx 30rpx;
+  /* padding-left: 30rpx;
+  padding-top: 30rpx; */
+  width: 720rpx;
+  background-color: white;
+}
+
+.title-text{
+  font-family: "微软雅黑";
+  font-size: 16px;
+  font-weight: 400;
+  font-kerning: auto;
+  color: black;
+}
+
+.title-tag{
+  margin: 20rpx 0rpx 0rpx 0rpx;
+  display: flex;
+  flex-direction: row;
+}
+
+.title-tag-content{
+  margin-right: 15rpx;
+  font-size: 28rpx;
+  color: black;
+}
+
+.title-tag-text{
+  margin-left: 10rpx;
+  padding: 2rpx 8rpx 2rpx 8rpx;
+  border: 1px solid #48C23D;
+  border-radius: 20rpx;
+  font-size: 25rpx;
+  color: #48C23D;
+}
+
+.summary{
+  display: flex;
+  flex-direction: row;
+}
+
+.summary-image{
+  margin: 20rpx 30rpx 30rpx 30rpx;
+  width: 250rpx;
+  height: 337.5rpx;
+}
+
+.summary-text{
+  margin-top: 20rpx;
+  display: flex;
+  flex-direction: column;
+}
+
+.summary-text-text{
+  margin-bottom: 15rpx;
+  font-size: 30rpx;
+}
+
+.summary-text-renzheng{
+   margin-bottom: 15rpx;
+}
+
+.summary-text-renzheng-text{
+  padding: 0rpx 3rpx 0rpx 3rpx;
+  border: 1px solid #48C23D;
+  color: #48C23D;
+  font-size: 28rpx;
+}
+
+.hr {
+  margin-top: 0rpx;
+  margin-left: 30rpx;
+  height: 1px;
+  width: 690rpx;
+  background-color: #d9d9d9;
+}
+
+.service{
+  background-color: white;
+  width: 100%;
+  margin-top: 20rpx;
+  padding-bottom: 20rpx;
+}
+
+.service-content{
+  margin-top: 30rpx;
+  padding-left: 30rpx;
+}
+
+.service-content-title{
+  font-size: 30rpx;
+}
+
+.service-hr{
+  margin-top: 10rpx;
+  margin-left: -2rpx;
+  padding-left: 0rpx;
+  height: 1px;
+  width: 690rpx;
+  background-color: #d9d9d9;
+}
+
+.service-content-text{
+  margin-top: 10rpx;
+  width: 690rpx;
+}
+
+.service-content-text-text{
+  font-size: 25rpx;
+  text-indent: 40rpx;
+}
+
+.service-content-video{
+  text-align: center;
+  margin-top: 20rpx;
+}
+
+.service-area{
+  margin-left: 30rpx;
+  margin-top: 30rpx;
+}
+
+.service-area-text{
+  font-size: 30rpx;
+}
+
+.service-related{
+  padding-left: 30rpx;
+  margin-top: 30rpx;
+}
+
+.service-related-text{
+  font-size: 30rpx;
+}
+
+.service-related-pictures{
+    white-space: nowrap;
+    margin-top: 20rpx;
+}
+
+.service-related-container{
+    display:inline-flex;
+    flex-direction: column;
+     margin-bottom: 20rpx; 
+    margin-right: 40rpx;
+    width: 170rpx;
+    text-align:center;
+    white-space: normal;
+}
+
+.service-related-img{
+    width: 170rpx;
+    height: 210rpx;
+}
+.service-related-name{
+    margin: 10rpx auto 0;
+}
+
+.service-current-location{
+  margin-top: 30rpx;
+  margin-left: 30rpx;
+}
+
+.service-current-location-text{
+  font-size: 30rpx;
+}
+
+.service-current-location-map{
+  margin-top: 20rpx;
+}
+
+.service-current-location-info{
+  margin-top: 10rpx;
+}
+
+.introduction{
+  background-color: white;
+  width: 100%;
+  margin-top: 20rpx;
+  padding-bottom: 20rpx;
+}
+
+.introduction-content{
+  margin-top: 20rpx;
+  margin-left: 30rpx;
+}
+
+.introduction-text{
+  font-size: 30rpx;
+}
+
+.tail{
+  background-color: white;
+  width: 100%;
+  margin-top: 20rpx;
+  padding-bottom: 20rpx;
+}
+
+.focus{
+   background-color: white; 
+  margin-top: 20rpx;
+  padding-bottom: 20rpx;
+  padding-right: 30rpx;
+  display: flex;
+  flex-direction: row;
+  padding-left: 30rpx;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.contact-font{
+  color: #999;
+  margin-bottom: 40rpx;
+}
+
+.contact-info{
+  margin-left: 10rpx;
+  padding-top: 20rpx;
+  display: flex;
+  flex-direction: column;
+}
+
+.contact-info-icon{
+  width: 40rpx;
+  height:40rpx;
+}
+
+.contact-info-group{
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.contact-info-item{
+  padding-left: 20rpx;
+  padding-bottom: 5rpx; 
+  line-height:50rpx;
+  letter-spacing: 1rpx; 
+  font-size: 30rpx;
+} 
+
+.foucus-logo{
+  border-radius: 50rpx;
+  background-color: #48C23D;
+  padding: 0rpx 10rpx 0rpx 10rpx;
+  width: 280rpx;
+  text-align: center;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.focus-logo-text{
+  color: white;
+  font-size: 30rpx;
+  margin: 20rpx 10rpx 20rpx 20rpx;
+}
+
+.fenge{
+  color: white;
+  font-size: 40rpx;
+  margin: 10rpx 0rpx 20rpx 10rpx;
+}
+
+.zan{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.zan-text{
+  color: white;
+  font-size: 30rpx;
+}
+
+.zan-image{
+  width: 50rpx;
+  height: 50rpx;
+  margin-left: 10rpx;
+  margin-right: 20rpx;
+}
+
+.bottom{
+  display: flex;
+  flex-direction: row;
+  position: fixed;
+  bottom: 0rpx;
+  height: 150rpx;
+  width: 750rpx;
+  background-color: #f9f9f9;
+  padding: 0rpx 0rpx 0rpx 0rpx;
+  align-items: center;
+  justify-content:space-around;
+}
+
+.g{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.g-image{
+  height: 75rpx;
+  width: 75rpx;
+}
+
+.z{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.z-image{
+  height: 75rpx;
+  width: 75rpx;
+}
+
+.bottom-text{
+  font-size: 28rpx;
+}
+
+.d{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.d-image{
+  height: 75rpx;
+  width: 75rpx;
+}

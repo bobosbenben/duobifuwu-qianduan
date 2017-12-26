@@ -1,0 +1,18 @@
+<import src="../stars/stars-template.wxml" />
+<template name="movieTemplate">
+    <view class="movie-container" catchtap="onUnitTap" data-id="{{id}}">
+        <image class="movie-img" src="{{coverImage}}"></image>
+        <text class="movie-title">{{name}}</text>
+        <!-- <template is="starsTemplate" data="{{stars:stars, score: average}}" /> -->
+        <view class="zan-focus-stars">
+          <view class="z">
+            <image src="/image/wz.png" class="z-image"></image>
+            <text class="z-text">{{zanedTimes}}</text>
+          </view>
+          <view class="g">
+            <image src="/image/wg.png" class="g-image"></image>
+            <text class="g-text">{{focusedTimes}}</text>
+          </view>
+        </view>
+    </view>
+</template>

@@ -1,0 +1,21 @@
+<template name="unit">
+  <view class="unit" catchtap="onCellTap" catchlongpress='onLongTap' data-name='{{name}}' data-unitid="{{id}}">
+    <view class="content">
+      <!-- <image src="/image/chaoshi.jpg" class="image"></image> -->
+      <view class="describe">
+        <text class="first-text">{{title}}</text>
+        <view class="t1">
+          <view class="t2">
+            <text class="second-text">{{stringTags}}</text>
+            <text class="third-text">{{serviceArea}}</text>
+          </view>
+          <view class="phone" catchtap="onListPhoneTap" data-num="{{mainPhoneNumber}}">
+            <image src="/image/phone.png" class="image" ></image>
+            <text class="phone-text">电话</text>
+          </view>
+        </view>
+      </view>
+    </view>
+    <view class="hr"></view>
+  </view>
+</template>

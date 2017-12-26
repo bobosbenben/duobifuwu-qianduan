@@ -1,0 +1,18 @@
+<template name="cell">
+  <navigator url="{{route}}?cellid={{id}}" class="pages-item" style="height:{{cellHeight}}">
+    <view class="gezi">
+      <view class="pages-text-wrapper">
+        <text class="pages-text">{{text}}</text>
+        <view class="second-line">
+          <text class="pages-text-second">{{textDescribe}}</text>
+        </view>
+      </view>
+
+      <!-- <view class="{{text==null||text.length==0?'pages-icon-wrapper-no-bg':'pages-icon-wrapper'}}" >   -->
+      <!-- <view class="{{icon!=''?'pages-icon-wrapper-bg':'pages-icon-wrapper-no-bg'}}"> -->
+      <view class="pages-icon-wrapper-bg">
+        <image src="{{icon}}" class="pages-icon"></image>
+      </view>
+    </view>
+  </navigator>
+</template>

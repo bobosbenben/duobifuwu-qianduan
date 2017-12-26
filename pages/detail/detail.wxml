@@ -1,0 +1,102 @@
+<!--detail.wxml-->
+<view class="container">
+  <view class="head">
+    <view class="title">
+      <text class="title-text">{{unit.title}}</text>
+      <view class="title-tag">
+        <text class="title-tag-content">标签:</text>
+        <block wx:for="{{unit.tags}}" wx:for-item="item">
+          <text class="title-tag-text">{{item}}</text>
+        </block>
+      </view>
+    </view>
+
+    <view class="hr"></view>
+
+    <view class="summary">
+      <image src="/image/dian1.jpg" class="summary-image"></image>
+      <view class="summary-text">
+        <text decode="{{true}}" class="summary-text-text">获赞数:　{{unit.zanedTimes}}</text>
+        <text decode="{{true}}" class="summary-text-text">籍贯:　{{unit.birthPlace}}</text>
+        <view class="summary-text-renzheng">
+          <text class="summary-text-text">认证状态:　</text>
+          <text class="summary-text-renzheng-text">{{unit.authenticationStatus}}</text>
+        </view>
+        <text class="summary-text-text">从业年限:　{{unit.serviceYears}}年</text>
+        <!-- <text class="summary-text-text">服务地区:　阿镇、康巴什</text> -->
+        <text class="summary-text-text">登记日期:　{{unit.registTime}}</text>
+      </view>
+    </view>
+  </view>
+
+  <view class="service">
+    <view class="service-content">
+      <text class="service-content-title">服务内容</text>
+      <view class="service-hr"></view>
+      <view class="service-content-text">
+        <text class="service-content-text-text">{{unit.serviceContentText}}</text>
+      </view>
+    </view>
+    <view class="service-content-video">
+      <video id="serviceContentVideo" src="{{unit.serviceContentVideo}}" controls poster='{{unit.serviceContentVideoPoster}}'></video>
+    </view>
+    <view class="service-related">
+      <text class="service-related-text"> 相关信息 </text>
+      <view class="service-hr"></view>
+      <scroll-view class="service-related-pictures" scroll-x="true" style="width:720rpx;overflow:scroll;">
+        <block wx:for="{{unit.serviceRelated}}" wx:for-item="item">
+          <view class="service-related-container" data-src="{{item.imagePath}}" catchtap="previewSingleImage">
+            <image class="service-related-img" src="{{item.imagePath}}"></image>
+            <text class="service-related-name">{{item.description}}</text>
+          </view>
+        </block>
+      </scroll-view>
+    </view>
+    <view class="service-area">
+      <text class="service-area-text">服务地区</text>
+      <view class="service-hr"></view>
+      <view class="service-content-text">
+        <text class="service-content-text-text" decode="true">{{unit.serviceArea}}</text>
+      </view>
+    </view>
+    <view wx:if="{{unit.haveAddress}}" class="service-current-location">
+      <text class="service-current-location-text">我的地址</text>
+      <view class="service-hr"></view>
+      <view class="service-current-location-map">
+        <map longitude="{{unit.location.longitude}}" latitude="{{unit.location.latitude}}" scale="{{unit.location.scale}}"  bindcontroltap="controltap" markers="{{unit.location.markers}}" bindmarkertap="markertap" show-location="true"
+          style="width: 690rpx; height: 100px;"></map>
+      </view>
+      <view class="service-current-location-info">
+        <text>地址：{{unit.location.address}}</text>
+      </view>
+    </view>
+  </view>
+
+  <view wx:if="{{unit.haveIntroduction}}" class="introduction">
+    <view class="introduction-content">
+      <text class="introduction-text">我的介绍</text>
+      <view class="service-hr"></view>
+      <view class="service-content-text">
+        <text class="service-content-text-text" decode="true">{{unit.introduction}}</text>
+      </view>
+    </view>
+  </view>
+
+  <view class="bottom">
+    <view class="g" catchtap="onFocusTap">
+      <image wx:if="{{unit.focused}}" src="/image/g.png" class="g-image"></image>
+      <image wx:if="{{!unit.focused}}" src="/image/wg.png" class="g-image"></image>
+      <text class="bottom-text">关注</text>
+    </view>
+    <view class="z" catchtap="onZanTap">
+      <image wx:if="{{unit.zaned}}" src="/image/z.png" class="z-image"></image>
+      <image wx:if="{{!unit.zaned}}" src="/image/wz.png" class="z-image"></image>
+      <text class="bottom-text">点赞</text>
+    </view>
+    <view class="d" catchtap="onPhoneTap" data-num="{{unit.mainPhoneNumber}}">
+      <image src="/image/d.png" class="d-image"></image>
+      <text class="bottom-text">电话</text>
+    </view>
+  </view>
+
+</view>

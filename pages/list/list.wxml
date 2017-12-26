@@ -1,0 +1,9 @@
+<import src="../../utils/template/unit/unit-template.wxml" />
+
+<view wx:for="{{listUnits}}" wx:for-item="listUnit">
+  <template is="unit" data="{{...listUnit}}"></template>
+</view>
+
+<view class='loading-complete' hidden='{{!listLoadingComplete}}'>
+  <text class='loading-complete-text'>全部都加载啦!</text>
+</view>

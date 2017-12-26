@@ -1,0 +1,39 @@
+@import "../cell/cell.wxss";
+
+.pages-container {  
+  height: 100%;  
+  display: flex;  
+  flex-direction: column;  
+  box-sizing: border-box;  
+  padding-top: 10rpx;  
+  /* padding-bottom: 10rpx;   */
+  border-bottom: #ddd solid 20rpx;
+}  
+
+.pages-row {  
+  width: 100%;  
+  display: flex;  
+  flex-direction: row;  
+  justify-content: space-around;  
+}  
+
+.group-title{
+  display: flex;
+  flex-direction: row;
+  padding-left: 10rpx;
+  margin-bottom: 10rpx;
+}
+
+.group-title-icon{
+  width: 40rpx;
+  height: 40rpx;
+}
+
+.group-title-text{
+  padding-left: 20rpx;
+  font-family: "微软雅黑";
+  font-size: 16px;
+  font-weight: 400;
+  font-kerning: auto;
+}
+  

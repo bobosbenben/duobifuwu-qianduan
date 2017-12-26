@@ -1,0 +1,29 @@
+<!--hot.wxml-->
+<import src="../../utils/template/movie-list/movie-list-template.wxml" />
+<import src="../../utils/template/movie-grid/movie-grid-template.wxml" />
+
+<view class="search-container">
+  <view class="search">
+    <icon type="search" class="search-img" size="15" color="#405f80" bindtap="onSearch"></icon>
+    <input type="text" placeholder="工匠、店铺、服务" placeholder-class="placeholder" bindfocus="onBindFocus" bindinput="onBindKeyWordInput" catchblur="onBindBlur" />
+    <image wx:if="{{searchPanelShow}}" src="/image/icon/xx.png" class="xx-img" bindtap="onCancelImgTap"></image>
+  </view>
+</view>
+
+
+<view class="container" wx:if="{{containerShow}}">
+  <view class="movies-template">
+    <template is="movieListTemplate" data="{{...hotPerson}}" />
+  </view>
+
+  <view class="movies-template">
+    <template is="movieListTemplate" data="{{...hotShop}}" />
+  </view>
+  <view class="movies-template">
+    <template is="movieListTemplate" data="{{...recentOnline}}" />
+  </view>
+</view>
+
+<view class="search-panel" wx:if="{{searchPanelShow}}">
+  <template is="movieGridTemplate" data="{{...searchResult}}" />
+</view>

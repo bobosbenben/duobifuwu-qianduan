@@ -1,0 +1,68 @@
+.hr{
+  margin-top: 0rpx;
+  padding-top: 0rpx;
+  height: 1px;
+  width: 690rpx;
+  margin-left: 37.5rpx;
+  background-color: #d9d9d9;
+}
+
+.content{
+  display: flex;
+  flex-direction: row;
+}
+
+.phone{
+  padding: 0rpx 10rpx 0rpx 10rpx;
+  margin-right: 20rpx;
+  height: 56rpx; 
+  border: 2px solid #E3170D; 
+  display: flex;
+  flex-direction: row;
+  align-items: center; 
+  justify-content: center;
+}
+
+.image{
+  height: 48rpx;
+  width: 48rpx;
+}
+
+.phone-text{
+  color: #E3170D;
+  width: 100%;
+  font-size: 28rpx;
+}
+
+.describe{
+  display: flex;
+  flex-direction: column;
+  margin: 20rpx auto 20rpx 40rpx
+}
+
+.first-text{
+  font-size: 40rpx;
+  color: black;
+}
+
+.second-text{
+  margin-top: 10rpx;
+  font-size: 30rpx;
+}
+
+.third-text{
+  margin-top: 10rpx;
+}
+
+.t1{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 700rpx;
+}
+
+.t2{
+  display: flex;
+  flex-direction: column;
+  width: 550rpx;
+}

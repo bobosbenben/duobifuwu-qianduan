@@ -1,0 +1,5 @@
+<!--pages/more-units/more-units.wxml-->
+<import src="../../utils/template/movie-grid/movie-grid-template.wxml" />
+<view class='hot-more'>
+  <template is="movieGridTemplate" data="{{...data}}" />
+</view>

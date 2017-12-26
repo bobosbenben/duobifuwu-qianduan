@@ -1,0 +1,13 @@
+/* list.wxss */
+@import "../../utils/template/unit/unit-template.wxss";
+
+.loading-complete{
+  text-align: center;
+  margin-top: 30rpx;
+  margin-bottom: 10rpx;
+}
+
+.loading-complete-text{
+  text-align: center;
+  font-size: 30rpx;
+}

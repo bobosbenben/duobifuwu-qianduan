@@ -1,0 +1,52 @@
+
+<view class="container">
+  
+  <view class="header">
+    <!-- <view class="user-icon"> -->
+     <image src="{{userInfo.avatarUrl}}" class="userinfo-avatar" background-size="cover"></image> 
+    <!-- <image src='../../image/dobby.png' class="userinfo-avatar" background-size="cover"></image> -->
+    <!-- </view> -->
+    <text class="user-name">Hi，{{userInfo.nickName}}</text>
+  </view>
+
+  <view class="hr"></view>
+  <view class="hr2"></view>
+
+  <navigator url="../mine-focus/mine-focus" style="width:100%">
+    <view class="list">
+      <text class="list-text">我的关注</text>
+      <image src="../../image/icon-jt.png" class="list-arrow"></image>
+    </view>
+  </navigator>
+  <view class="hr"></view>
+  <navigator url="../mine-zan/mine-zan" style="width:100%">
+    <view class="list">
+      <text class="list-text">我的点赞</text>
+      <image src="../../image/icon-jt.png" class="list-arrow"></image>
+    </view>
+  </navigator>
+  <view class="hr"></view>
+
+  <view class="hr2"></view>
+  <navigator url="../detail/detail?id=1" style="width:100%">
+    <view class="list">
+      <text class="list-text">关于我们</text>
+      <image src="../../image/icon-jt.png" class="list-arrow"></image>
+    </view>
+  </navigator>
+  <view class="hr"></view>
+  <navigator url="../mine/mine" catchtap='onContactUs' style="width:100%">
+    <view class="list">
+      <text class="list-text">联系我们</text>
+      <image src="../../image/icon-jt.png" class="list-arrow"></image>
+    </view>
+  </navigator>
+  <view class="hr"></view>
+</view>
+<view class="dobby">
+  <image src="/image/dobby.png" class="dobby-image"></image>
+</view>
+
+<view class="bottom">
+  <text class="bottom-text">多比信息服务技术为您呈现</text>
+</view>

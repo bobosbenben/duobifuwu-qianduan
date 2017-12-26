@@ -1,0 +1,48 @@
+
+.movie-container {
+  display: flex;
+  flex-direction: column;
+  padding: 0 22rpx;
+}
+
+.movie-img {
+  width: 200rpx;
+  height: 270rpx;
+  padding-bottom: 20rpx;
+}
+
+.movie-title{
+    margin-bottom: 16rpx;
+    font-size: 24rpx;
+}
+
+.zan-focus-stars{
+  margin-top: -20rpx;
+  padding: 0rpx 0rpx 0rpx 0rpx;
+  display: flex;
+  flex-direction: row;
+}
+
+.z-image{
+  height: 30rpx;
+  width: 30rpx;
+}
+
+.z-text{
+  font-size: 25rpx;
+}
+
+.g{
+  margin-left: 10rpx;
+}
+
+.g-image{
+  height: 25rpx;
+  width: 25rpx;
+  padding-top: 10rpx;
+}
+
+.g-text{
+  margin-left: 2rpx;
+  font-size: 25rpx;
+}

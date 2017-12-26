@@ -1,0 +1,5 @@
+<import src="../../utils/template/group/group.wxml" />
+
+<view wx:for="{{items}}">
+  <template is="group" data="{{...item,cellHeight}}"></template>
+</view>

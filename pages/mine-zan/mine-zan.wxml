@@ -1,0 +1,10 @@
+<!--pages/mine-zan/mine-zan.wxml-->
+<import src="../../utils/template/unit/unit-template.wxml" />
+
+<view wx:for="{{zanUnits}}" wx:for-item="zanUnit">
+  <template is="unit" data="{{...zanUnit}}"></template>
+</view>
+
+<view class='loading-complete' hidden='{{!listLoadingComplete}}'>
+  <text class='loading-complete-text'>全部都加载啦!</text>
+</view>

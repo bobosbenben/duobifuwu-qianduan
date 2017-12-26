@@ -16,19 +16,22 @@ Page({
   onLoad: function (options) {
     var that = this;
     var openid = app.globalData.openid;
-
-    wx.login({
-      success: function (loginRes) {
-        wx.getUserInfo({
-          success: function (res) {
-            that.setData({
-              userInfo: res.userInfo
-            })
-          }
-        })
-
-      }
+    that.setData({
+      userInfo: app.globalData.userInfo
     })
+
+    // wx.login({
+    //   success: function (loginRes) {
+    //     wx.getUserInfo({
+    //       success: function (res) {
+    //         that.setData({
+    //           userInfo: res.userInfo
+    //         })
+    //       }
+    //     })
+
+    //   }
+    // })
 
   },
 

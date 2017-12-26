@@ -25,17 +25,17 @@ Page({
     })
 
     //调用应用实例的方法获取全局数据  
-    app.getUserInfo(function (userInfo) {
+    // app.getUserInfo(function (userInfo) {
       wx.setNavigationBarTitle({
         title: '多比信息服务',
         success: function (res) {
           // success  
         }
       })
-      that.setData({
-        userInfo: userInfo
-      });
-    })
+    //   that.setData({
+    //     userInfo: userInfo
+    //   });
+    // })
   },
 
   //开通分享页面

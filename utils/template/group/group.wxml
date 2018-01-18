@@ -4,7 +4,7 @@
   <!-- <scroll-view scroll-y="true" class="pages-wrapper"> -->
   <view class="pages-wrapper">
     <view class="group-title">
-      <image src="../../image/a1.png" class="group-title-icon"></image>
+      <image src="{{icon}}" class="group-title-icon"></image>
       <text class="group-title-text">{{text}}</text>
     </view>
 

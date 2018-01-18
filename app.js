@@ -59,7 +59,7 @@ App({
             },
             fail: function () {
               that.globalData.userInfo = {
-                avatarUrl:'http://b25.photo.store.qq.com/psu?/4c18405d-6bf7-4eed-87bf-7da723987a0b/J0.rR3VZYtMz.qu7qSmk.NuBmYyk1JcXuTKXlpCXZ04!/b/YdoS*A7*ugAAYgDb7A7huwAA&bo=kADiAAAAAAABAFU!&rf=viewer_4',
+                avatarUrl:'http://duobifuwu-1252535629.cosbj.myqcloud.com/dobby.png',
                 nickName: '客官'
               }
             }

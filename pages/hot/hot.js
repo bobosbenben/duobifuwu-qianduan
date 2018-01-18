@@ -17,7 +17,7 @@ Page({
     search: {},
     searchLoadingComplete: false,
     searchPageNum: 1,
-    searchKeyWord: null,
+    searchKeyWord: '',
     searchLock: false  //解决请求数据时多次触底导致的错误
   },
 
@@ -45,7 +45,6 @@ Page({
 
   onMoreTap: function (event) {
     var category = event.currentTarget.dataset.category;
-    console.log('categoryTitle'); console.log(category);
     wx.navigateTo({
       url: "../more-units/more-units?category=" + category
     })
@@ -62,14 +61,9 @@ Page({
     this.setData({
       containerShow: true,
       searchPanelShow: false,
-      searchResult: {}
-    })
-  },
-
-  onBindKeyWordInput: function (event) {
-    this.setData({
-      searchKeyWord: event.detail.value
-    })
+      searchResult: {},
+      searchKeyWord: ''
+    });
   },
 
   onBindFocus: function (event) {
@@ -83,7 +77,8 @@ Page({
     this.setData({
       searchPageNum: 1,
       searchLoadingComplete: false,
-      searchResult:{}
+      searchResult:{},
+      searchKeyWord: event.detail.value
     });
     this.fetchSearchList();
   },
@@ -157,22 +152,6 @@ Page({
     }
   },
 
-  onShareAppMessage: function (res) {
-    if (res.from === 'menu') {
-      // 来自页面内转发按钮
-      console.log(res.target)
-    }
-    return {
-      title: '工匠：石伊波',
-      path: '/pages/movie-detail?id=123',
-      success: function () {
-        wx.showToast({
-          title: '分享成功',
-          icon: 'success',
-          duration: 500
-        })
-      }
-    }
-  }
+  onShareAppMessage: function (res) {}
 
 })

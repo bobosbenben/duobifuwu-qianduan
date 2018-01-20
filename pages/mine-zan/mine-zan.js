@@ -106,15 +106,19 @@ Page({
             data: {
               unitid: unitId,
               openid: app.globalData.openid
+            },
+            success:function(result){
+              if(result.data.success){
+                that.setData({
+                  zanUnits: [],
+                  pageNum: 1,
+                  listLock: false,
+                  listLoadingComplete: false
+                });
+                that.fetchList();
+              }
             }
           });
-          that.setData({
-            zanUnits: [],
-            pageNum: 1,
-            listLock: false,
-            listLoadingComplete: false
-          });
-          that.fetchList();
         }
         else if (res.cancel) {
 
